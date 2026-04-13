@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ポートフォリオ統計 — SEN LLC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="site-header">
+      <a class="site-logo" href="https://sen.ltd/portfolio/">SEN Portfolio</a>
+      <nav class="header-nav">
+        <button id="lang-btn" type="button" class="btn-ghost">English</button>
+        <button id="theme-btn" type="button" class="btn-ghost">☀ Light</button>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="milestone-badge">🎉 #100</div>
+        <h1 id="hero-title">100件、出荷しました。</h1>
+        <p id="hero-subtitle" class="hero-sub"></p>
+        <p id="hero-tagline" class="hero-tagline"></p>
+      </div>
+    </section>
+
+    <!-- Milestone message -->
+    <div class="milestone-banner">
+      <p id="milestone-msg"></p>
+    </div>
+
+    <!-- Loading / Error -->
+    <p id="loading" class="status-msg" hidden></p>
+    <p id="error" class="status-msg error-msg" hidden></p>
+
+    <!-- Stat cards -->
+    <section class="stat-cards" aria-label="統計カード">
+      <div class="stat-card accent-blue">
+        <span id="stat-total" class="stat-value">—</span>
+        <span id="stat-total-label" class="stat-label"></span>
+      </div>
+      <div class="stat-card accent-green">
+        <span id="stat-tests" class="stat-value">—</span>
+        <span id="stat-tests-label" class="stat-label"></span>
+      </div>
+      <div class="stat-card accent-purple">
+        <span id="stat-avg" class="stat-value">—</span>
+        <span id="stat-avg-label" class="stat-label"></span>
+      </div>
+      <div class="stat-card accent-gold">
+        <span id="stat-done" class="stat-value">—</span>
+        <span id="stat-done-label" class="stat-label"></span>
+      </div>
+    </section>
+
+    <!-- Charts grid -->
+    <main class="charts-grid">
+
+      <!-- Category -->
+      <section class="chart-section">
+        <h2 id="section-category" class="section-title"></h2>
+        <div id="chart-category" class="chart-container"></div>
+      </section>
+
+      <!-- Tech stack -->
+      <section class="chart-section">
+        <h2 id="section-tech" class="section-title"></h2>
+        <div id="chart-tech" class="chart-container"></div>
+      </section>
+
+      <!-- Stage -->
+      <section class="chart-section">
+        <h2 id="section-stage" class="section-title"></h2>
+        <div id="chart-stage" class="chart-container"></div>
+      </section>
+
+      <!-- Top tested -->
+      <section class="chart-section">
+        <h2 id="section-top-tested" class="section-title"></h2>
+        <div id="top-tested-list"></div>
+      </section>
+
+    </main>
+
+    <!-- Timeline (full width) -->
+    <section class="timeline-section">
+      <h2 id="section-timeline" class="section-title"></h2>
+      <div id="chart-timeline" class="chart-container timeline-container"></div>
+    </section>
+
+    <!-- Tag cloud -->
+    <section class="tags-section">
+      <h2 id="section-tags" class="section-title"></h2>
+      <div id="tag-cloud" class="tag-cloud"></div>
+    </section>
+
+    <!-- Explorer -->
+    <section class="explorer-section">
+      <h2 id="section-explorer" class="section-title"></h2>
+      <div class="explorer-controls">
+        <input id="search-input" type="search" class="search-input" />
+        <div class="filter-row">
+          <select id="filter-category" class="filter-select" aria-label="category filter"></select>
+          <select id="filter-tech" class="filter-select" aria-label="tech filter"></select>
+          <select id="filter-stage" class="filter-select" aria-label="stage filter"></select>
+          <span id="grid-count" class="grid-count"></span>
+        </div>
+      </div>
+      <div id="entry-grid" class="entry-grid"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>© 2026 <a href="https://sen.ltd" target="_blank" rel="noopener">SEN LLC (SEN 合同会社)</a></p>
+      <p><a href="https://github.com/sen-ltd/portfolio-stats" target="_blank" rel="noopener">GitHub</a></p>
+    </footer>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
