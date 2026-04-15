@@ -56,3 +56,10 @@ portfolio-stats/
 ## License
 
 MIT — © 2026 SEN LLC (SEN 合同会社)
+
+<!-- sen-publish:links -->
+## Links
+
+- 🌐 Demo: https://sen.ltd/portfolio/portfolio-stats/
+- 📝 dev.to: https://dev.to/sendotltd/100-projects-in-4-days-a-meta-dashboard-celebrating-the-milestone-336j
+<!-- /sen-publish:links -->
