@@ -581,6 +581,62 @@ a:hover { text-decoration: underline; }
   white-space: nowrap;
 }
 
+.icon-links {
+  display: inline-flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  color: var(--text2);
+  text-decoration: none;
+  transition: background 0.12s;
+}
+
+.icon-link:hover {
+  background: var(--border);
+}
+
+.icon-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* On dark theme the canonical GitHub/X/dev.to brand colors are near-black
+   and disappear against the card background. Override their fill to the
+   current text color so they stay visible. Qiita green is preserved. */
+[data-theme="dark"] .icon-link svg[aria-label="GitHub"],
+[data-theme="dark"] .icon-link svg[aria-label="X"],
+[data-theme="dark"] .icon-link svg[aria-label="dev.to"] {
+  fill: var(--text);
+}
+
+.article-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text2);
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.12s, border-color 0.12s;
+}
+
+.article-badge:hover {
+  color: var(--text);
+  border-color: var(--text2);
+}
+
 .no-results {
   color: var(--text2);
   text-align: center;
